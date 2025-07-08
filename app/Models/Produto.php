@@ -14,9 +14,9 @@ class Produto extends Model
         'imagem',
     ];
 
-    public function itemPedidos()
+    public function itensPedidos()
     {
-        return $this->belongsTo(ItemPedido::class);
+        return $this->hasMany(ItemPedido::class);
     }
 }
 

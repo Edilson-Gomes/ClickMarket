@@ -12,11 +12,15 @@ class Pedido extends Model
         'cliente_id',
     ];
 
-    public function users(){
-        return $this->belongsTo(User::class);
+    public function cliente(){
+        return $this->hasMany(Cliente::class);
     }
 
     public function itemPedidos(){
         return $this->belongsTo(ItemPedido::class);
+    }
+
+    public function movimentoCaixa(){
+        return $this->belongsTo(MovimentoCaixa::class);
     }
 }

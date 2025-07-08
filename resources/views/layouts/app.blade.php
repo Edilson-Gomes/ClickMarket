@@ -10,7 +10,7 @@
 
   <!-- Navbar -->
   <header class="bg-blue-600 text-white px-6 py-4 flex justify-between items-center shadow-md">
-    <h1 class="text-2xl font-bold">🛒 ClickMarket</h1>
+    <h1 class="text-2xl font-bold">🛒 <a href="/relatorios">ClickMarket</a></h1>
     <nav class="space-x-4">
       <div class="flex">
         <div>

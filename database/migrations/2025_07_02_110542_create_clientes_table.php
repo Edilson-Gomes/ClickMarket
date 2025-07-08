@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nome');
             $table->integer('idade');
-            $table->enum('estado_civil',['solteira[o]','casada[o]','divorciada[o]','viuva[o]']);
+            $table->string('estado_civil');
             $table->integer('quantidade_filhos');
             $table->integer('dia_mes');
             $table->enum('dia_semana',['domingo','segunda','terca','quarta','quinta','sexta','sabado']);

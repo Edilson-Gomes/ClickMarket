@@ -12,7 +12,7 @@
         <p class="text-green-600 font-bold mt-1">R$ {{ $prod->preco }}</p>
         <form class="mt-4" action="{{ route('carrinho.adicionar', $prod->id) }}" method="POST">
             @csrf
-          <input type="number" value="1" min="1" class="border border-gray-300 rounded px-2 py-1 w-20 text-center" />
+          <input type="number" name="quantidade" value="1" min="1" max="{{ $prod->estoque }}" class="border border-gray-300 rounded px-2 py-1 w-20 text-center" />
           <button type="submit" class="ml-2 px-4 py-1 bg-blue-600 text-white rounded hover:bg-blue-700">Carrinho</button>
         </form>
       </div>
